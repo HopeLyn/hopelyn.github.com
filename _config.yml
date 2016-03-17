@@ -49,10 +49,17 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+# site-map
 sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
