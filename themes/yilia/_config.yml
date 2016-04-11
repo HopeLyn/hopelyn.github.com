@@ -2,20 +2,20 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  随笔: /tags/随笔
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/HopeLyn"
+  #weibo: "#"
+  rss: "/atom.xml"
+  #zhihu: "#"
   #douban: "#"
-  #mail: "#"
+  mail: "buaa_lyn@163.com"
   #facebook: "#"
-  #google: "#"
+  google: "buaaxigua@gmail.com"
   #twitter: "#"
-  #linkedin: "#"
+  linkedin: "https://cn.linkedin.com/in/yannan-li-abb147a3"
 
 rss: /atom.xml
 
@@ -35,7 +35,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar:
+avatar: https://avatars3.githubusercontent.com/u/8351105?v=3&s=460
 #是否开启分享
 share_jia: true
 share_addthis: false
@@ -61,4 +61,4 @@ friends:
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 喜欢编程，热爱生活的🍉君
