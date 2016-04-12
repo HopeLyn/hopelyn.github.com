@@ -7,10 +7,12 @@ tags:
 	- 实践
 ---
 
+## 相关链接
+*	[极客学院](http://wiki.jikexueyuan.com/project/hexo-document/)
 
-## 博客地址
-*	`http://hopelyn.github.io/`
-* 	`http://blog.hopeleft.com/`
+## 本人博客地址
+*	[http://hopelyn.github.io/](http://hopelyn.github.io/)
+* 	[http://blog.hopeleft.com/](http://blog.hopeleft.com/)
 
 ## 配置环境
 ### Github Pages Prjoect 搭建
@@ -128,7 +130,14 @@ tags:
 
 *	文章的主体
 	*	基本按照 [Markdown](http://www.appinn.com/markdown/) 语法
-	* 	**注意一点** 在写副标题的时候，需要在`##` 和标题名中间留下空格，如 `## 使用方法`，否则会显示 `##使用方法` 在页面上，而不转义
+	* 	**注意事项**
+		*  	在写副标题的时候，需要在`##` 和标题名中间留下空格，如 `## 使用方法`，否则会显示 `##使用方法` 在页面上，而不转义
+		*  	在写列表时(如下所示)，多余的空行有时会导致语义上的误解，比如将其当作是引用的换行符
+
+			```js
+			*  这是第一个列表
+			*  这是第二个列表
+			```
 
 ### 常见问题
 *	`WARN  No layout: index.html`: 当使用 git 来保存 hexo 文件夹时，因为 yilia 和 next 是单独的 git project，所以当你换电脑，或者重新 clone 这个工程时，yilia 和 next 只剩下空的文件夹
