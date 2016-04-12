@@ -118,7 +118,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/实践/" style="font-size: 10px;">实践</a> <a href="/tags/工具/" style="font-size: 20px;">工具</a> <a href="/tags/语法/" style="font-size: 15px;">语法</a>
 					</div>
 				</section>
 				
@@ -206,11 +206,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Markdown语法学习" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/10/hello-world/" class="article-date">
-  	<time datetime="2016-04-10T07:49:57.000Z" itemprop="datePublished">2016-04-10</time>
+      <a href="/2016/04/09/Markdown语法学习/" class="article-date">
+  	<time datetime="2016-04-09T08:01:28.000Z" itemprop="datePublished">2016-04-09</time>
 </a>
     </div>
   
@@ -223,7 +223,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/10/hello-world/">Hello World</a>
+      <a class="article-title" href="/2016/04/09/Markdown语法学习/">Markdown语法学习</a>
     </h1>
   
 
@@ -232,15 +232,177 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p><strong>备注</strong>: 待完成，从开头到”图片大小”部分尚未处理</p>
+<h2 id="语法总结"><a href="#语法总结" class="headerlink" title="语法总结"></a>语法总结</h2><ul>
+<li><p>段落与换行:</p>
+<ul>
+<li>行尾多加两个空格，就可以换行</li>
+<li><code>&lt;br&gt;</code></li>
+</ul>
+</li>
+<li><p>标题:</p>
+<ul>
+<li><p>#标题1</p>
+</li>
+<li><h1 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h1></li>
+<li><p>标题2<br>-</p>
+</li>
+</ul>
+</li>
+<li><p>引用: </p>
+<ul>
+<li><p>单行引用</p>
+</li>
+<li><blockquote>
+<p>单行引用</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>嵌套引用</p>
+<blockquote>
+<p>嵌套嵌套</p>
+</blockquote>
+</blockquote>
+</li>
+<li><blockquote>
+<p>引用中使用 <strong><em><code>markdown</code></em></strong> 语法</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>列表:</p>
+<ul>
+<li><p>无序列表</p>
+<ul>
+<li>第一项</li>
+</ul>
+<ul>
+<li>第二项 </li>
+</ul>
+<ul>
+<li>第三项</li>
+</ul>
+</li>
+<li><p>有序列表</p>
+<ol>
+<li>有序列表以<code>数字</code>和<code>.</code>为首</li>
+<li>数字的序列并不会影响生成的列表序列: </li>
+<li>比如这样</li>
+<li>也可以转义来取消序列的作用<br>6. </li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>代码</p>
+<ul>
+<li><p>代码块</p>
+<html><br><div style="color:#69d">蓝色的代码</div><br></html>
+</li>
+<li><p>内嵌代码: <code>&lt;title&gt;Markdown&lt;/title&gt;</code></p>
+</li>
+</ul>
+</li>
+<li><p>分割线</p>
+<h2 id=""><a href="#" class="headerlink" title="  *"></a><em> </em> *</h2><hr>
+</li>
+</ul>
+<ul>
+<li><p>超链接:</p>
+<ul>
+<li><p>本地文件:<a href="./images/icon.png">icon.png</a></p>
+</li>
+<li><p><a href="http://www.google.com/" target="_blank" rel="external">Google</a></p>
+</li>
+<li><p>[Google][]</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    [Google]: http://www.google.com/ &quot;Google&quot;
+*    自动转换为链接
+    *     URL: &lt;http://www.google.com/&gt;
+    *    Email: &lt;123@email.com&gt;
+</code></pre><ul>
+<li><p>图片: </p>
+<ul>
+<li><p>行内式  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![GitHub](https:<span class="comment">//avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100 "GitHub,Social Coding")</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100" alt="GitHub" title="GitHub,Social Coding"></p>
+</li>
+<li><p>参考式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注: hexo 中出不来结果</span></span><br><span class="line">![GitHub][github]</span><br><span class="line">[github]: https:<span class="comment">//avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100 "GitHub,Social Coding"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    ![GitHub][github]
+    [github]: https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100 &quot;GitHub,Social Coding&quot;
+
+*    图片大小:
+
+    <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=<span class="string">"https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100"</span> alt=<span class="string">"GitHub"</span> title=<span class="string">"GitHub,Social Coding"</span> width=<span class="string">"200"</span> height=<span class="string">"200"</span> /&gt;</span><br></pre></td></tr></table></figure>
+
+    &lt;img src=&quot;https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100&quot; alt=&quot;GitHub&quot; title=&quot;GitHub,Social Coding&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;
+</code></pre><ul>
+<li><p>强调</p>
+<ul>
+<li><p><em>斜体</em> or <em>斜体</em></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*斜体* or _斜体_</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>粗体</strong> or <strong>粗体</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**粗体** or __粗体__</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>扩展语法</p>
+<ul>
+<li><p>语法高亮</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 用法</span><br><span class="line">```js</span><br><span class="line">window.addEventListener(&apos;load&apos;, function()&#123;</span><br><span class="line">	console.log(&apos;window loaded&apos;);</span><br><span class="line">&#125;)</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 结果</span><br><span class="line">window.addEventListener(&apos;load&apos;, function()&#123;</span><br><span class="line">	console.log(&apos;window loaded&apos;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表格: </p>
+<ul>
+<li><code>|</code> 区分单元格</li>
+<li><code>-</code> 分隔表头和其它行</li>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 链接 | 结果 | 原因 |</span><br><span class="line">|-----|---|----------|</span><br><span class="line">|文本内容| **`是`** |同协议同域名同端口|</span><br><span class="line">|文本内容| **`是`** |同协议同域名同端口|</span><br><span class="line">|文本内容| **`是`** |同协议同域名同端口|</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>结果 </p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>链接</th>
+<th>结果</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本内容</td>
+<td><strong><code>是</code></strong></td>
+<td>同协议同域名同端口</td>
+</tr>
+<tr>
+<td>文本内容</td>
+<td><strong><code>是</code></strong></td>
+<td>同协议同域名同端口</td>
+</tr>
+<tr>
+<td>文本内容</td>
+<td><strong><code>是</code></strong></td>
+<td>同协议同域名同端口</td>
+</tr>
+</tbody>
+</table>
+<h2 id="注意问题"><a href="#注意问题" class="headerlink" title="注意问题"></a>注意问题</h2><ul>
+<li>想要引用反引号(<code>` </code>)的时候，使用多个反引号将其括起来(注意包括的反引号和内容中的反引号不能是连续的，需要用空格隔开)，如<code>`` ` `` </code></li>
+</ul>
 
       
     </div>
@@ -248,7 +410,15 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/语法/">语法</a></li></ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/未完成/">未完成</a>
+	</div>
+
 
       
       <div class="clearfix"></div>
@@ -267,11 +437,11 @@
 
 
   
-    <article id="post-第一篇文章" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-正则表达式学习" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/17/第一篇文章/" class="article-date">
-  	<time datetime="2016-03-17T06:22:45.000Z" itemprop="datePublished">2016-03-17</time>
+      <a href="/2016/04/08/正则表达式学习/" class="article-date">
+  	<time datetime="2016-04-08T07:35:56.000Z" itemprop="datePublished">2016-04-08</time>
 </a>
     </div>
   
@@ -284,7 +454,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/17/第一篇文章/">第一篇文章</a>
+      <a class="article-title" href="/2016/04/08/正则表达式学习/">正则表达式学习</a>
     </h1>
   
 
@@ -293,7 +463,150 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>asldkhf;<br>aksdlhfl;sadhflashdfl;dsah.f;lh<br>alksdjf<br>alsdjfk<br>akjjl</p>
+        <h2 id="测试工具"><a href="#测试工具" class="headerlink" title="测试工具"></a>测试工具</h2><ul>
+<li>sublime 中的搜索功能: 打开正则开关(<strong>Regular expression</strong>)和高亮开关(<strong>Highlight matches</strong>)</li>
+<li>网上测试工具:<ul>
+<li><a href="http://tool.oschina.net/regex/" target="_blank" rel="external">开源中国在线工具</a></li>
+<li><a href="http://tool.chinaz.com/regex/" target="_blank" rel="external">站长工具</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="JavaScript-中的用法"><a href="#JavaScript-中的用法" class="headerlink" title="JavaScript 中的用法"></a><strong>JavaScript</strong> 中的用法</h2><ul>
+<li><p><code>replace</code>方法: <code>stringObject.replace(regexp,replacement)</code></p>
+<ul>
+<li><code>replacement</code> 参数<ul>
+<li><code>$1、$2、...、$99</code>: 与 <strong>regexp</strong> 中的第 1 到第 99 个子表达式相匹配的文本</li>
+<li><code>$&amp;</code>: 与 <strong>regexp</strong> 相匹配的子串。 </li>
+<li><code>$` </code>: 位于匹配子串左侧的文本。 </li>
+<li><code>$&#39;</code>: 位于匹配子串右侧的文本。 </li>
+<li><code>%</code>: 直接量符号。</li>
+</ul>
+</li>
+<li><p>例子</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 替换两个名字的顺序</span></span><br><span class="line">name = <span class="string">"Doe, John"</span>;</span><br><span class="line">name.replace(<span class="regexp">/(\w+)\s*, \s*(\w+)/</span>, <span class="string">"$2 $1"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="RegExp-对象"><a href="#RegExp-对象" class="headerlink" title="RegExp 对象"></a><strong>RegExp</strong> 对象</h3><ul>
+<li>修饰符<ul>
+<li><code>i</code>: 执行对大小写不敏感的匹配 =&gt; <code>/[a-z]/i</code> 匹配a-z，A-Z</li>
+<li><code>g</code>: 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）=&gt; <code>/[a-z]/g</code></li>
+<li><code>m</code>: 执行多行匹配</li>
+</ul>
+</li>
+</ul>
+<h2 id="普通语法"><a href="#普通语法" class="headerlink" title="普通语法"></a>普通语法</h2><ul>
+<li><p>例子</p>
+<ul>
+<li><code>0\d{2}-\d{8}</code> 匹配 <strong>010-88888888</strong> 这类的电话</li>
+<li><code>^\d{5,12}$</code> 填写的 QQ 号必须为 5 位到 12 位数字时</li>
+<li><code>\ba\w*\b</code> 匹配以字母 a 开头的单词</li>
+<li><code>\(?0\d{2}[) -]?\d{8}</code> 匹配几种格式的电话：<br><strong>(010)88886666</strong>，或 <strong>022-22334455</strong>，或 <strong>02912345678</strong></li>
+<li><code>((2([0-4]\d|5[0-5])|1?\d{1,2})\.){3}(2([0-4]\d|5[0-5])|1?\d{1,2})</code> 匹配 IP 地址</li>
+<li><code>\b(\w+)\b\s+\1\b</code> 可以用来匹配重复的单词，像 <strong>go go</strong>, 或者 <strong>kitty kitty</strong></li>
+<li><code>\b(?&lt;Word&gt;\w+)\b\s+\k&lt;Word&gt;\b</code> 也可以</li>
+<li><p><strong>url 解析</strong> 的例子: </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parseUrl</span>(<span class="params">url</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> urlPattern = <span class="regexp">/^(?:([A-Za-z]+):)?(\/&#123;0,3&#125;)([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/</span>;</span><br><span class="line">	<span class="keyword">var</span> result = urlPattern.exec(url);</span><br><span class="line">	<span class="keyword">var</span> type = [<span class="string">'url'</span>, <span class="string">'scheme'</span>, <span class="string">'slash'</span>, <span class="string">'host'</span>, <span class="string">'port'</span>, <span class="string">'path'</span>, <span class="string">'query'</span>, <span class="string">'hash'</span>];</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parseUrl(<span class="string">"http://tool.oschina.net:80/regex?haha=true#fragment"</span>);</span><br><span class="line"><span class="comment">// ["http://tool.oschina.net:80/regex?haha=true#fragment", "http", "//", "tool.oschina.net", "80", "regex", "haha=true", "fragment"]</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>元字符</p>
+<ul>
+<li><code>\w</code> 匹配 字符、数字、下划线、汉字 等</li>
+<li><code>\d</code> 匹配数字</li>
+<li><code>\s</code> 匹配任意的空白符：空格，制表，换行，中文全角空格等</li>
+<li><code>.</code> 匹配除换行符(结束符)以外的任意字符</li>
+</ul>
+</li>
+<li><p>位置匹配：</p>
+<ul>
+<li><code>^</code>：”字符串”的开始</li>
+<li><code>$</code>：”字符串”的结束</li>
+<li><code>\b</code>: 表示一个位置 =&gt; 其前一个和后一个字符不全是 <code>\w</code></li>
+</ul>
+</li>
+<li><p>重复匹配：限定符</p>
+<ul>
+<li><code>*</code>     重复零次或更多次</li>
+<li><code>+</code>     重复一次或更多次</li>
+<li><code>?</code>     重复零次或一次</li>
+<li><code>{n}</code> 重复n次</li>
+<li><code>{n,}</code> 重复n次或更多次</li>
+<li><code>{n,m}</code> 重复n到m次</li>
+</ul>
+</li>
+<li><p>元素集：<code>[]</code> 里面表示一个范围</p>
+<ul>
+<li><code>[aeiou]</code> 匹配英文元音字母</li>
+<li><code>[0-9]</code> 匹配数字,即\d</li>
+<li><code>[0-9a-zA-Z]</code> 匹配数字和字母</li>
+</ul>
+</li>
+<li><p>分支条件：|    把几种不同的规则分隔开(按顺序匹配)</p>
+<ul>
+<li><code>0\d{2}-\d{8}|0\d{3}-\d{7}</code> 这个表达式能匹配两种以连字号分隔的电话号码：一种是三位区号，8 位本地号(<strong>010-12345678</strong>)，一种是4位区号，7位本地号(<strong>0376-2233445</strong>)。</li>
+</ul>
+</li>
+<li><p>分组：可以用小括号来指定子表达式(也叫做分组)</p>
+<ul>
+<li><code>(\d{1,3}\.){3}\d{1,3}</code> 是一个简单的 IP 地址匹配表达式</li>
+</ul>
+</li>
+<li><p>反义：</p>
+<ul>
+<li><code>\W</code> 匹配任意不是字母，数字，下划线，汉字的字符</li>
+<li><code>\S</code> 匹配任意不是空白符的字符</li>
+<li><code>\D</code> 匹配任意非数字的字符</li>
+<li><code>\B</code> 匹配不是单词开头或结束的位置</li>
+<li><code>[^x]</code>    匹配 <strong>除了 x 以外</strong> 的任意字符</li>
+<li><code>[^aeiou]</code> 匹配除了 aeiou 这几个字母以外的任意字符</li>
+</ul>
+</li>
+<li><p>后向引用（分组）：使用小括号指定一个子表达式后，匹配这个子表达式的文本(也就是此分组捕获的内容)可以在表达式或其它程序中作进一步的处理。默认情况下，每个分组会自动拥有一个组号，规则是: <strong>从左向右，以分组的左括号为标志，第一个出现的分组的组号为1，第二个为2</strong></p>
+<ul>
+<li><code>\1</code>: 代表分组1匹配的文本</li>
+<li>捕获    <ul>
+<li><code>(exp)</code> 匹配 exp，并捕获文本到自动命名的组里</li>
+<li><code>(?&lt;name&gt;exp)</code> 匹配 exp，并捕获文本到名称为 name 的组里，也可以写成 <code>(?&#39;name&#39;exp)</code></li>
+<li><code>(?:exp)</code> 匹配 exp，不捕获匹配的文本，也不给此分组分配组号</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>零宽断言（<strong>匹配位置！</strong>）：用于查找在某些内容(但并不包括这些内容)之前或之后的东西，也就是说它们像\b,^,$那样用于指定一个位置，这个位置应该满足一定的条件(即断言)，因此它们也被称为零宽断言</p>
+<ul>
+<li><code>(?=exp)</code> 零宽度正预测先行断言，断言自身出现的位置的后面能匹配表达式 exp，也就是匹配 exp 前面的位置<ul>
+<li><code>\b\w+(?=ing\b)</code> 匹配以 ing 结尾的单词的前面部分(<strong>除了 ing 以外的部分</strong>)</li>
+</ul>
+</li>
+<li><code>(?&lt;=exp)</code> 零宽度正回顾后发断言，匹配 exp 后面的位置</li>
+<li><code>(?!exp)</code> 匹配后面跟的不是 exp 的位置</li>
+<li><code>(?&lt;!exp)</code> 匹配前面不是 exp 的位置</li>
+</ul>
+</li>
+<li><p>匹配优先级：</p>
+<ul>
+<li>最先开始的匹配拥有最高优先级 —— <strong>The match that begins earliest wins</strong></li>
+<li>贪婪：当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配尽可能多的字符</li>
+<li>转化为懒惰匹配模式：要在限定符后面加上一个问号 <code>?</code></li>
+</ul>
+</li>
+<li><p>需要转义的字符要注意</p>
+<ul>
+<li><code>\/</code>: 避免误认为是 正则表达式的结束符</li>
+<li><code>\?</code>: 避免误认为是 非捕获匹配符或是限定符</li>
+<li><code>\.</code>: 避免误认为是 任意匹配元字符</li>
+</ul>
+</li>
+<li><p>练习:</p>
+<ul>
+<li>匹配数字: <code>/^-?$/</code></li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -302,10 +615,198 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/语法/">语法</a></li></ul>
 	</div>
 
       
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/已归档/">已归档</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Github Pages + Hexo 写博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/08/Github Pages + Hexo 写博客/" class="article-date">
+  	<time datetime="2016-04-08T07:02:28.000Z" itemprop="datePublished">2016-04-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/08/Github Pages + Hexo 写博客/">Github Pages + Hexo 写博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
+<li><a href="http://wiki.jikexueyuan.com/project/hexo-document/" target="_blank" rel="external">极客学院</a></li>
+</ul>
+<h2 id="本人博客地址"><a href="#本人博客地址" class="headerlink" title="本人博客地址"></a>本人博客地址</h2><ul>
+<li><a href="http://hopelyn.github.io/" target="_blank" rel="external">http://hopelyn.github.io/</a></li>
+<li><a href="http://blog.hopeleft.com/" target="_blank" rel="external">http://blog.hopeleft.com/</a></li>
+</ul>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="Github-Pages-Prjoect-搭建"><a href="#Github-Pages-Prjoect-搭建" class="headerlink" title="Github Pages Prjoect 搭建"></a>Github Pages Prjoect 搭建</h3><h3 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
+<li><p>安装 Node 环境: <a href="https://hexo.io/docs/index.html#Install-Node-js" target="_blank" rel="external">https://hexo.io/docs/index.html#Install-Node-js</a></p>
+<ul>
+<li><code>curl https://raw.github.com/creationix/nvm/master/install.sh | sh</code></li>
+<li>或者使用 nvm : <code>nvm install 4</code></li>
+</ul>
+</li>
+<li><p>安装 Git 环境: <a href="https://hexo.io/docs/index.html#Install-Git" target="_blank" rel="external">https://hexo.io/docs/index.html#Install-Git</a></p>
+<ul>
+<li>使用 homebrew: <code>brew install git</code></li>
+<li>使用 macports: <code>port instal git</code></li>
+</ul>
+</li>
+<li><p>安装 hexo (使用 npm 安装):<code>npm install -g hexo-cli</code></p>
+</li>
+<li><p>安装 <code>hexo-deployer-git</code> =&gt; 可以发布 hexo 到相应的 git rep 上: <code>npm install hexo-deployer-git --save</code> </p>
+</li>
+</ul>
+<h4 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h4><ul>
+<li><p>修改 <code>_config.yml</code> 文件:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// _config.xml</span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">	type: git</span><br><span class="line">	repo: git@github.com:HopeLyn/hopelyn.github.com.git</span><br><span class="line">	branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 <strong>./public</strong> 文件夹下添加 <code>CNAME</code> 文件，并写下需要重定向的域名 </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// CNAME</span></span><br><span class="line">blog.hopeleft.com</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 theme</p>
+<ul>
+<li><p>下载主题到 <strong>./themes</strong> 文件夹下</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 安装 Next 主题</span></span><br><span class="line">git clone https:<span class="comment">//github.com/iissnan/hexo-theme-next themes/next</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者安装 yilia 主题</span></span><br><span class="line">git clone https:<span class="comment">//github.com/litten/hexo-theme-yilia.git themes/yilia</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 <code>_config.yml</code> 文件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// #theme: next</span></span><br><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>sitemap</code>: </p>
+<ul>
+<li><p>普通的 <strong>sitemap</strong> 插件</p>
+<ul>
+<li><p>安装</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 <code>_config.xml</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// _config.xml</span></span><br><span class="line">sitemap:</span><br><span class="line">         path: sitemap.xml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>baidu-sitemap</strong> 插件</p>
+<ul>
+<li><p>安装</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 <code>_config.xml</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// _config.xml</span></span><br><span class="line">baidusitemap:</span><br><span class="line">	path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>生成 <code>RSS</code>:</p>
+<ul>
+<li>安装插件: <code>npm install hexo-generator-feed --save</code></li>
+<li><p>修改设置:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// _config.xml</span></span><br><span class="line">feed:</span><br><span class="line">	type: atom</span><br><span class="line">	path: atom.xml</span><br><span class="line">	limit: <span class="number">20</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>yilia</code>主题的自定义配置</p>
+<ul>
+<li><p>language: 在主目录下的 <code>_config.yml</code> 中修改</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-Hans #简体中文</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ul>
+<li><p>新建文章: <code>hexo new &#39;My Post Name&#39;</code> =&gt; 就会在 <strong>./source/_posts</strong> 下新建一个 <code>My Post Name.md</code> 文件</p>
+</li>
+<li><p>通过 <code>hexo d -generate</code> 生成 html 文件(在 public 文件夹下)，并发布到 github 上</p>
+</li>
+<li><p><code>hexo s</code>: 启动本地服务，方便调整和配置</p>
+</li>
+</ul>
+<h3 id="写文章方法"><a href="#写文章方法" class="headerlink" title="写文章方法"></a>写文章方法</h3><ul>
+<li><p>文章的头部</p>
+<ul>
+<li><p>用<code>hexo new &#39;My Post Name&#39;</code>命令新建文章的话会自动生成开头，如下所示</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Github Pages + Hexo 写博客</span><br><span class="line">date: <span class="number">2016</span><span class="number">-04</span><span class="number">-09</span> <span class="number">16</span>:<span class="number">11</span>:<span class="number">31</span></span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>文章的主体</p>
+<ul>
+<li>基本按照 <a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown</a> 语法</li>
+<li><p><strong>注意事项</strong></p>
+<ul>
+<li>在写副标题的时候，需要在<code>##</code> 和标题名中间留下空格，如 <code>## 使用方法</code>，否则会显示 <code>##使用方法</code> 在页面上，而不转义</li>
+<li><p>在写列表时(如下所示)，多余的空行有时会导致语义上的误解，比如将其当作是引用的换行符</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">*  这是第一个列表</span><br><span class="line">*  这是第二个列表</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ul>
+<li><p><code>WARN  No layout: index.html</code>: 当使用 git 来保存 hexo 文件夹时，因为 yilia 和 next 是单独的 git project，所以当你换电脑，或者重新 clone 这个工程时，yilia 和 next 只剩下空的文件夹</p>
+<ul>
+<li><p>解决方法一: 重新拉取 =&gt; 但是当你用 git 管理 hexo 项目的时候，这些主题并不会 push 上去</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决方法二: 通过 git subtree 来管理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 新建一个指向远程仓库的 remote </span><br><span class="line">git remote add yilia https://github.com/litten/hexo-theme-yilia.git</span><br><span class="line"></span><br><span class="line">// 在指定路径下建立 subtree，并同步代码</span><br><span class="line">git subtree add —-prefix=themes/yilia/ yilia master</span><br><span class="line"></span><br><span class="line">// 或者直接建立</span><br><span class="line">git subtree add --prefix=themes/next --squash https://github.com/iissnan/hexo-theme-next.git master</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实践/">实践</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/未完成/">未完成</a>
+	</div>
+
 
       
       <div class="clearfix"></div>

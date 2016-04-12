@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>正则表达式学习 | HopeLeft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这篇文章主要是在于记录正则表达式的入门学习过程，总结了其语法以及一些基本使用方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式学习">
+<meta property="og:url" content="http://www.hopeleft.com/2016/04/08/正则表达式学习/index.html">
+<meta property="og:site_name" content="HopeLeft">
+<meta property="og:description" content="这篇文章主要是在于记录正则表达式的入门学习过程，总结了其语法以及一些基本使用方法">
+<meta property="og:updated_time" content="2016-04-12T09:55:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="正则表达式学习">
+<meta name="twitter:description" content="这篇文章主要是在于记录正则表达式的入门学习过程，总结了其语法以及一些基本使用方法">
+  
+    <link rel="alternative" href="/atom.xml" title="HopeLeft" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars3.githubusercontent.com/u/8351105?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lyn</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/HopeLyn" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/buaa_lyn@163.com" title="mail">mail</a>
+					        
+								<a class="google" target="_blank" href="/buaaxigua@gmail.com" title="google">google</a>
+					        
+								<a class="linkedin" target="_blank" href="https://cn.linkedin.com/in/yannan-li-abb147a3" title="linkedin">linkedin</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/实践/" style="font-size: 10px;">实践</a> <a href="/tags/工具/" style="font-size: 20px;">工具</a> <a href="/tags/语法/" style="font-size: 15px;">语法</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">喜欢编程，热爱生活的🍉君</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Lyn</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="https://avatars3.githubusercontent.com/u/8351105?v=3&amp;s=460" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Lyn</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/HopeLyn" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/buaa_lyn@163.com" title="mail">mail</a>
+			        
+						<a class="google" target="_blank" href="/buaaxigua@gmail.com" title="google">google</a>
+			        
+						<a class="linkedin" target="_blank" href="https://cn.linkedin.com/in/yannan-li-abb147a3" title="linkedin">linkedin</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-正则表达式学习" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/08/正则表达式学习/" class="article-date">
+  	<time datetime="2016-04-08T07:35:56.000Z" itemprop="datePublished">2016-04-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      正则表达式学习
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/语法/">语法</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/已归档/">已归档</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="测试工具"><a href="#测试工具" class="headerlink" title="测试工具"></a>测试工具</h2><ul>
+<li>sublime 中的搜索功能: 打开正则开关(<strong>Regular expression</strong>)和高亮开关(<strong>Highlight matches</strong>)</li>
+<li>网上测试工具:<ul>
+<li><a href="http://tool.oschina.net/regex/" target="_blank" rel="external">开源中国在线工具</a></li>
+<li><a href="http://tool.chinaz.com/regex/" target="_blank" rel="external">站长工具</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="JavaScript-中的用法"><a href="#JavaScript-中的用法" class="headerlink" title="JavaScript 中的用法"></a><strong>JavaScript</strong> 中的用法</h2><ul>
+<li><p><code>replace</code>方法: <code>stringObject.replace(regexp,replacement)</code></p>
+<ul>
+<li><code>replacement</code> 参数<ul>
+<li><code>$1、$2、...、$99</code>: 与 <strong>regexp</strong> 中的第 1 到第 99 个子表达式相匹配的文本</li>
+<li><code>$&amp;</code>: 与 <strong>regexp</strong> 相匹配的子串。 </li>
+<li><code>$` </code>: 位于匹配子串左侧的文本。 </li>
+<li><code>$&#39;</code>: 位于匹配子串右侧的文本。 </li>
+<li><code>%</code>: 直接量符号。</li>
+</ul>
+</li>
+<li><p>例子</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 替换两个名字的顺序</span></span><br><span class="line">name = <span class="string">"Doe, John"</span>;</span><br><span class="line">name.replace(<span class="regexp">/(\w+)\s*, \s*(\w+)/</span>, <span class="string">"$2 $1"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="RegExp-对象"><a href="#RegExp-对象" class="headerlink" title="RegExp 对象"></a><strong>RegExp</strong> 对象</h3><ul>
+<li>修饰符<ul>
+<li><code>i</code>: 执行对大小写不敏感的匹配 =&gt; <code>/[a-z]/i</code> 匹配a-z，A-Z</li>
+<li><code>g</code>: 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）=&gt; <code>/[a-z]/g</code></li>
+<li><code>m</code>: 执行多行匹配</li>
+</ul>
+</li>
+</ul>
+<h2 id="普通语法"><a href="#普通语法" class="headerlink" title="普通语法"></a>普通语法</h2><ul>
+<li><p>例子</p>
+<ul>
+<li><code>0\d{2}-\d{8}</code> 匹配 <strong>010-88888888</strong> 这类的电话</li>
+<li><code>^\d{5,12}$</code> 填写的 QQ 号必须为 5 位到 12 位数字时</li>
+<li><code>\ba\w*\b</code> 匹配以字母 a 开头的单词</li>
+<li><code>\(?0\d{2}[) -]?\d{8}</code> 匹配几种格式的电话：<br><strong>(010)88886666</strong>，或 <strong>022-22334455</strong>，或 <strong>02912345678</strong></li>
+<li><code>((2([0-4]\d|5[0-5])|1?\d{1,2})\.){3}(2([0-4]\d|5[0-5])|1?\d{1,2})</code> 匹配 IP 地址</li>
+<li><code>\b(\w+)\b\s+\1\b</code> 可以用来匹配重复的单词，像 <strong>go go</strong>, 或者 <strong>kitty kitty</strong></li>
+<li><code>\b(?&lt;Word&gt;\w+)\b\s+\k&lt;Word&gt;\b</code> 也可以</li>
+<li><p><strong>url 解析</strong> 的例子: </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parseUrl</span>(<span class="params">url</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> urlPattern = <span class="regexp">/^(?:([A-Za-z]+):)?(\/&#123;0,3&#125;)([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/</span>;</span><br><span class="line">	<span class="keyword">var</span> result = urlPattern.exec(url);</span><br><span class="line">	<span class="keyword">var</span> type = [<span class="string">'url'</span>, <span class="string">'scheme'</span>, <span class="string">'slash'</span>, <span class="string">'host'</span>, <span class="string">'port'</span>, <span class="string">'path'</span>, <span class="string">'query'</span>, <span class="string">'hash'</span>];</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parseUrl(<span class="string">"http://tool.oschina.net:80/regex?haha=true#fragment"</span>);</span><br><span class="line"><span class="comment">// ["http://tool.oschina.net:80/regex?haha=true#fragment", "http", "//", "tool.oschina.net", "80", "regex", "haha=true", "fragment"]</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>元字符</p>
+<ul>
+<li><code>\w</code> 匹配 字符、数字、下划线、汉字 等</li>
+<li><code>\d</code> 匹配数字</li>
+<li><code>\s</code> 匹配任意的空白符：空格，制表，换行，中文全角空格等</li>
+<li><code>.</code> 匹配除换行符(结束符)以外的任意字符</li>
+</ul>
+</li>
+<li><p>位置匹配：</p>
+<ul>
+<li><code>^</code>：”字符串”的开始</li>
+<li><code>$</code>：”字符串”的结束</li>
+<li><code>\b</code>: 表示一个位置 =&gt; 其前一个和后一个字符不全是 <code>\w</code></li>
+</ul>
+</li>
+<li><p>重复匹配：限定符</p>
+<ul>
+<li><code>*</code>     重复零次或更多次</li>
+<li><code>+</code>     重复一次或更多次</li>
+<li><code>?</code>     重复零次或一次</li>
+<li><code>{n}</code> 重复n次</li>
+<li><code>{n,}</code> 重复n次或更多次</li>
+<li><code>{n,m}</code> 重复n到m次</li>
+</ul>
+</li>
+<li><p>元素集：<code>[]</code> 里面表示一个范围</p>
+<ul>
+<li><code>[aeiou]</code> 匹配英文元音字母</li>
+<li><code>[0-9]</code> 匹配数字,即\d</li>
+<li><code>[0-9a-zA-Z]</code> 匹配数字和字母</li>
+</ul>
+</li>
+<li><p>分支条件：|    把几种不同的规则分隔开(按顺序匹配)</p>
+<ul>
+<li><code>0\d{2}-\d{8}|0\d{3}-\d{7}</code> 这个表达式能匹配两种以连字号分隔的电话号码：一种是三位区号，8 位本地号(<strong>010-12345678</strong>)，一种是4位区号，7位本地号(<strong>0376-2233445</strong>)。</li>
+</ul>
+</li>
+<li><p>分组：可以用小括号来指定子表达式(也叫做分组)</p>
+<ul>
+<li><code>(\d{1,3}\.){3}\d{1,3}</code> 是一个简单的 IP 地址匹配表达式</li>
+</ul>
+</li>
+<li><p>反义：</p>
+<ul>
+<li><code>\W</code> 匹配任意不是字母，数字，下划线，汉字的字符</li>
+<li><code>\S</code> 匹配任意不是空白符的字符</li>
+<li><code>\D</code> 匹配任意非数字的字符</li>
+<li><code>\B</code> 匹配不是单词开头或结束的位置</li>
+<li><code>[^x]</code>    匹配 <strong>除了 x 以外</strong> 的任意字符</li>
+<li><code>[^aeiou]</code> 匹配除了 aeiou 这几个字母以外的任意字符</li>
+</ul>
+</li>
+<li><p>后向引用（分组）：使用小括号指定一个子表达式后，匹配这个子表达式的文本(也就是此分组捕获的内容)可以在表达式或其它程序中作进一步的处理。默认情况下，每个分组会自动拥有一个组号，规则是: <strong>从左向右，以分组的左括号为标志，第一个出现的分组的组号为1，第二个为2</strong></p>
+<ul>
+<li><code>\1</code>: 代表分组1匹配的文本</li>
+<li>捕获    <ul>
+<li><code>(exp)</code> 匹配 exp，并捕获文本到自动命名的组里</li>
+<li><code>(?&lt;name&gt;exp)</code> 匹配 exp，并捕获文本到名称为 name 的组里，也可以写成 <code>(?&#39;name&#39;exp)</code></li>
+<li><code>(?:exp)</code> 匹配 exp，不捕获匹配的文本，也不给此分组分配组号</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>零宽断言（<strong>匹配位置！</strong>）：用于查找在某些内容(但并不包括这些内容)之前或之后的东西，也就是说它们像\b,^,$那样用于指定一个位置，这个位置应该满足一定的条件(即断言)，因此它们也被称为零宽断言</p>
+<ul>
+<li><code>(?=exp)</code> 零宽度正预测先行断言，断言自身出现的位置的后面能匹配表达式 exp，也就是匹配 exp 前面的位置<ul>
+<li><code>\b\w+(?=ing\b)</code> 匹配以 ing 结尾的单词的前面部分(<strong>除了 ing 以外的部分</strong>)</li>
+</ul>
+</li>
+<li><code>(?&lt;=exp)</code> 零宽度正回顾后发断言，匹配 exp 后面的位置</li>
+<li><code>(?!exp)</code> 匹配后面跟的不是 exp 的位置</li>
+<li><code>(?&lt;!exp)</code> 匹配前面不是 exp 的位置</li>
+</ul>
+</li>
+<li><p>匹配优先级：</p>
+<ul>
+<li>最先开始的匹配拥有最高优先级 —— <strong>The match that begins earliest wins</strong></li>
+<li>贪婪：当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配尽可能多的字符</li>
+<li>转化为懒惰匹配模式：要在限定符后面加上一个问号 <code>?</code></li>
+</ul>
+</li>
+<li><p>需要转义的字符要注意</p>
+<ul>
+<li><code>\/</code>: 避免误认为是 正则表达式的结束符</li>
+<li><code>\?</code>: 避免误认为是 非捕获匹配符或是限定符</li>
+<li><code>\.</code>: 避免误认为是 任意匹配元字符</li>
+</ul>
+</li>
+<li><p>练习:</p>
+<ul>
+<li>匹配数字: <code>/^-?$/</code></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/04/09/Markdown语法学习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Markdown语法学习
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/08/Github Pages + Hexo 写博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Github Pages + Hexo 写博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="正则表达式学习" data-title="正则表达式学习" data-url="http://www.hopeleft.com/2016/04/08/正则表达式学习/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Lyn
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
