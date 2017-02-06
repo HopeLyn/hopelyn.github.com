@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.hopeleft.com/"/>
+  <link href="http://blog.hopeleft.com/"/>
   <updated>2016-12-16T09:28:04.000Z</updated>
-  <id>http://www.hopeleft.com/</id>
+  <id>http://blog.hopeleft.com/</id>
   
   <author>
     <name>Lyn</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Markdown语法学习</title>
-    <link href="http://www.hopeleft.com/2016/04/09/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://www.hopeleft.com/2016/04/09/Markdown语法学习/</id>
+    <link href="http://blog.hopeleft.com/2016/04/09/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://blog.hopeleft.com/2016/04/09/Markdown语法学习/</id>
     <published>2016-04-09T08:01:28.000Z</published>
     <updated>2016-12-16T09:28:04.000Z</updated>
     
@@ -203,19 +203,19 @@
     
     </summary>
     
-      <category term="未完成" scheme="http://www.hopeleft.com/categories/%E6%9C%AA%E5%AE%8C%E6%88%90/"/>
+      <category term="未完成" scheme="http://blog.hopeleft.com/categories/%E6%9C%AA%E5%AE%8C%E6%88%90/"/>
     
     
-      <category term="工具" scheme="http://www.hopeleft.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://blog.hopeleft.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="语法" scheme="http://www.hopeleft.com/tags/%E8%AF%AD%E6%B3%95/"/>
+      <category term="语法" scheme="http://blog.hopeleft.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>正则表达式学习</title>
-    <link href="http://www.hopeleft.com/2016/04/08/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://www.hopeleft.com/2016/04/08/正则表达式学习/</id>
+    <link href="http://blog.hopeleft.com/2016/04/08/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://blog.hopeleft.com/2016/04/08/正则表达式学习/</id>
     <published>2016-04-08T07:35:56.000Z</published>
     <updated>2016-12-16T09:28:04.000Z</updated>
     
@@ -371,19 +371,19 @@
     
     </summary>
     
-      <category term="已归档" scheme="http://www.hopeleft.com/categories/%E5%B7%B2%E5%BD%92%E6%A1%A3/"/>
+      <category term="已归档" scheme="http://blog.hopeleft.com/categories/%E5%B7%B2%E5%BD%92%E6%A1%A3/"/>
     
     
-      <category term="工具" scheme="http://www.hopeleft.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://blog.hopeleft.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="语法" scheme="http://www.hopeleft.com/tags/%E8%AF%AD%E6%B3%95/"/>
+      <category term="语法" scheme="http://blog.hopeleft.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Github Pages + Hexo 写博客</title>
-    <link href="http://www.hopeleft.com/2016/04/08/Github%20Pages%20+%20Hexo%20%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://www.hopeleft.com/2016/04/08/Github Pages + Hexo 写博客/</id>
+    <link href="http://blog.hopeleft.com/2016/04/08/Github%20Pages%20+%20Hexo%20%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://blog.hopeleft.com/2016/04/08/Github Pages + Hexo 写博客/</id>
     <published>2016-04-08T07:02:28.000Z</published>
     <updated>2016-12-16T09:28:04.000Z</updated>
     
@@ -520,12 +520,12 @@
     
     </summary>
     
-      <category term="未完成" scheme="http://www.hopeleft.com/categories/%E6%9C%AA%E5%AE%8C%E6%88%90/"/>
+      <category term="未完成" scheme="http://blog.hopeleft.com/categories/%E6%9C%AA%E5%AE%8C%E6%88%90/"/>
     
     
-      <category term="工具" scheme="http://www.hopeleft.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://blog.hopeleft.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="实践" scheme="http://www.hopeleft.com/tags/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="http://blog.hopeleft.com/tags/%E5%AE%9E%E8%B7%B5/"/>
     
   </entry>
   
