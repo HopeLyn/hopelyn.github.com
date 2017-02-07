@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hopeleft.com/"/>
-  <updated>2016-12-16T09:28:04.000Z</updated>
+  <updated>2017-02-07T07:37:15.000Z</updated>
   <id>http://blog.hopeleft.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日本行政区划</title>
+    <link href="http://blog.hopeleft.com/2017/01/04/%E6%97%A5%E6%9C%AC%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/"/>
+    <id>http://blog.hopeleft.com/2017/01/04/日本行政区划/</id>
+    <published>2017-01-04T06:14:01.000Z</published>
+    <updated>2017-02-07T07:37:15.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;两级行政区划&quot;&gt;&lt;a href=&quot;#两级行政区划&quot; class=&quot;headerlink&quot; title=&quot;两级行政区划&quot;&gt;&lt;/a&gt;两级行政区划&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;都、道、府、县&lt;/strong&gt;（广域地方公共团体）：东京都，北海道，大阪府，京都府, 43县。其办事机构称为“厅”，即“都厅”、“道厅”、“府厅”、“县厅”，行政长官称为“知事”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;市、町、村&lt;/strong&gt;（基础地方公共团体）：其办事机构称“役所”，即“市役所”、“町役所”、“村役所”，行政长官称为“市长”、“町长”、“村长”。其中，町相当于中国的镇。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;八个地区&quot;&gt;&lt;a href=&quot;#八个地区&quot; class=&quot;headerlink&quot; title=&quot;八个地区&quot;&gt;&lt;/a&gt;八个地区&lt;/h2&gt;&lt;p&gt;根据地理位置，又可分为八个地区：北海道地方，东北地方，关东地方，中部地方，近畿地方，中国地方，四国地方，九州及冲绳地方&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;media/14835104737473/14835105500366.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;两级行政区划&quot;&gt;&lt;a href=&quot;#两级行政区划&quot; class=&quot;headerlink&quot; title=&quot;两级行政区划&quot;&gt;&lt;/a&gt;两级行政区划&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;都、道、府、县&lt;/strong&gt;（广域地方公共团体）：东京都，北海道，大阪
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://blog.hopeleft.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown语法学习</title>
