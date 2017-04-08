@@ -4,38 +4,40 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>日本行政区划 | HopeLeft</title>
+  <title>浏览器的 Cache 机制研究 | HopeLeft</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="两级行政区划
-都、道、府、县（广域地方公共团体）：东京都，北海道，大阪府，京都府, 43县。其办事机构称为“厅”，即“都厅”、“道厅”、“府厅”、“县厅”，行政长官称为“知事”
-
-市、町、村（基础地方公共团体）：其办事机构称“役所”，即“市役所”、“町役所”、“村役所”，行政长官称为“市长”、“町长”、“村长”。其中，町相当于中国的镇。
+  <meta name="description" content="测试过程
+打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件
 
 
-八个地区根据地理位置，又可分为八个地区：北海道地方，东北">
+
+按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
 <meta property="og:type" content="article">
-<meta property="og:title" content="日本行政区划">
-<meta property="og:url" content="http://blog.hopeleft.com/2017/01/04/日本行政区划/index.html">
+<meta property="og:title" content="浏览器的 Cache 机制研究">
+<meta property="og:url" content="http://blog.hopeleft.com/2017/02/14/浏览器的 Cache 机制研究/index.html">
 <meta property="og:site_name" content="HopeLeft">
-<meta property="og:description" content="两级行政区划
-都、道、府、县（广域地方公共团体）：东京都，北海道，大阪府，京都府, 43县。其办事机构称为“厅”，即“都厅”、“道厅”、“府厅”、“县厅”，行政长官称为“知事”
-
-市、町、村（基础地方公共团体）：其办事机构称“役所”，即“市役所”、“町役所”、“村役所”，行政长官称为“市长”、“町长”、“村长”。其中，町相当于中国的镇。
+<meta property="og:description" content="测试过程
+打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件
 
 
-八个地区根据地理位置，又可分为八个地区：北海道地方，东北">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14835104737473/14835105500366.jpg">
-<meta property="og:updated_time" content="2017-02-07T08:53:24.000Z">
+
+按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
+<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870545904964.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870587533341.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870618446585.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870623717107.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870623524159.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870635219273.jpg">
+<meta property="og:updated_time" content="2017-04-08T09:49:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日本行政区划">
-<meta name="twitter:description" content="两级行政区划
-都、道、府、县（广域地方公共团体）：东京都，北海道，大阪府，京都府, 43县。其办事机构称为“厅”，即“都厅”、“道厅”、“府厅”、“县厅”，行政长官称为“知事”
-
-市、町、村（基础地方公共团体）：其办事机构称“役所”，即“市役所”、“町役所”、“村役所”，行政长官称为“市长”、“町长”、“村长”。其中，町相当于中国的镇。
+<meta name="twitter:title" content="浏览器的 Cache 机制研究">
+<meta name="twitter:description" content="测试过程
+打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件
 
 
-八个地区根据地理位置，又可分为八个地区：北海道地方，东北">
-<meta name="twitter:image" content="http://blog.hopeleft.com/media/14835104737473/14835105500366.jpg">
+
+按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
+<meta name="twitter:image" content="http://blog.hopeleft.com/media/14870541119124/14870545904964.jpg">
   
     <link rel="alternative" href="/atom.xml" title="HopeLeft" type="application/atom+xml">
   
@@ -225,11 +227,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-日本行政区划" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-浏览器的 Cache 机制研究" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/01/04/日本行政区划/" class="article-date">
-  	<time datetime="2017-01-04T06:14:01.000Z" itemprop="datePublished">2017-01-04</time>
+      <a href="/2017/02/14/浏览器的 Cache 机制研究/" class="article-date">
+  	<time datetime="2017-02-14T06:35:28.000Z" itemprop="datePublished">2017-02-14</time>
 </a>
     </div>
   
@@ -242,7 +244,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      日本行政区划
+      浏览器的 Cache 机制研究
     </h1>
   
 
@@ -250,11 +252,11 @@
       
       <div class="article-info article-info-post">
         
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/未完成/">未完成</a>
 	</div>
 
-        
 
         <div class="clearfix"></div>
       </div>
@@ -262,14 +264,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="两级行政区划"><a href="#两级行政区划" class="headerlink" title="两级行政区划"></a>两级行政区划</h2><ul>
-<li><p><strong>都、道、府、县</strong>（广域地方公共团体）：东京都，北海道，大阪府，京都府, 43县。其办事机构称为“厅”，即“都厅”、“道厅”、“府厅”、“县厅”，行政长官称为“知事”</p>
-</li>
-<li><p><strong>市、町、村</strong>（基础地方公共团体）：其办事机构称“役所”，即“市役所”、“町役所”、“村役所”，行政长官称为“市长”、“町长”、“村长”。其中，町相当于中国的镇。</p>
+        <h2 id="测试过程"><a href="#测试过程" class="headerlink" title="测试过程"></a>测试过程</h2><ul>
+<li>打开网页可以发现图都是 <code>from memory cache</code> 方式获取的，另外还有一些 <code>from disk cache</code> 的则是浏览器插件的 js 和 css 文件</li>
+</ul>
+<p><img src="media/14870541119124/14870545904964.jpg" alt=""></p>
+<ul>
+<li><p>按照网上说的(<a href="(http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers">StackOverflow: Using <meta> tags to turn off caching in all browsers</a>))，添加了清除缓存语句，然而图片还是 <code>from memory cache</code>，说明图片的缓存并不受 meta 控制</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"cache-control"</span> <span class="attr">content</span>=<span class="string">"max-age=0"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"cache-control"</span> <span class="attr">content</span>=<span class="string">"no-cache"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"expires"</span> <span class="attr">content</span>=<span class="string">"0"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"expires"</span> <span class="attr">content</span>=<span class="string">"Tue, 01 Jan 1980 1:00:00 GMT"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"pragma"</span> <span class="attr">content</span>=<span class="string">"no-cache"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="八个地区"><a href="#八个地区" class="headerlink" title="八个地区"></a>八个地区</h2><p>根据地理位置，又可分为八个地区：北海道地方，东北地方，关东地方，中部地方，近畿地方，中国地方，四国地方，九州及冲绳地方</p>
-<p><img src="/media/14835104737473/14835105500366.jpg" alt="日本行政区划图"></p>
+<pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Cache-Control"</span> <span class="attr">content</span>=<span class="string">"no-cache, no-store, must-revalidate"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Pragma"</span> <span class="attr">content</span>=<span class="string">"no-cache"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Expires"</span> <span class="attr">content</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+</code></pre><ul>
+<li>在 Chrome 浏览器下，可以通过 <code>chrome://cache</code> 地址来查看当前 chrome 缓存的文件</li>
+</ul>
+<p><img src="media/14870541119124/14870587533341.jpg" alt=""></p>
+<ul>
+<li>发现工程中的文件有时候是 <code>from disk cache</code>，有时候是 <code>from memory cache</code></li>
+</ul>
+<p><img src="media/14870541119124/14870618446585.jpg" alt=""></p>
+<ul>
+<li>加入了以下语句以后，清除缓存加刷新页面，ubt 文件加载了一次以后还是会显示 <code>from disk cache</code>，说明语句并没有起作用</li>
+</ul>
+<p><img src="media/14870541119124/14870623717107.jpg" alt=""></p>
+<p><img src="media/14870541119124/14870623524159.jpg" alt=""></p>
+<ul>
+<li><strong>memory cache</strong> vs <strong>disk cache</strong>: 按照 Reddit 上的回答<a href="https://www.reddit.com/r/explainlikeimfive/comments/3660ig/eli5what_is_the_difference_between_disk_caching/" target="_blank" rel="external">What is the difference between disk caching and memory caching?</a>，浏览器缓存一般存于 <strong>disk cache</strong>，而系统缓存一般存于 <strong>memory cache</strong></li>
+</ul>
+<p><img src="media/14870541119124/14870635219273.jpg" alt=""></p>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
+<li><a href="http://stackoverflow.com/questions/49547/how-to-control-web-page-caching-across-all-browsers" target="_blank" rel="external">StackOverflow: How to control web page caching, across all browsers</a>: 赞同最多的答案</li>
+<li><a href="(http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers">StackOverflow: Using <meta> tags to turn off caching in all browsers</a>)</li>
+</ul>
 
       
     </div>
@@ -279,18 +304,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/02/14/浏览器的 Cache 机制研究/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          浏览器的 Cache 机制研究
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/04/09/Markdown语法学习/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Markdown语法学习</div>
+    <a href="/2017/01/04/日本行政区划/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">日本行政区划</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -325,7 +341,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="日本行政区划" data-title="日本行政区划" data-url="http://blog.hopeleft.com/2017/01/04/日本行政区划/"></div>
+	<div class="ds-thread" data-thread-key="浏览器的 Cache 机制研究" data-title="浏览器的 Cache 机制研究" data-url="http://blog.hopeleft.com/2017/02/14/浏览器的 Cache 机制研究/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
