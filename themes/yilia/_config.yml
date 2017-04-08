@@ -11,9 +11,9 @@ subnav:
   rss: "/atom.xml"
   #zhihu: "#"
   #douban: "#"
-  mail: "buaa_lyn@163.com"
+  mail: "mailto:buaa_lyn@163.com"
   #facebook: "#"
-  google: "buaaxigua@gmail.com"
+  google: "mailto:buaaxigua@gmail.com"
   #twitter: "#"
   linkedin: "https://cn.linkedin.com/in/yannan-li-abb147a3"
 
@@ -32,7 +32,7 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+favicon: /favicon.ico
 
 #你的头像url
 avatar: https://avatars3.githubusercontent.com/u/8351105?v=3&s=460
