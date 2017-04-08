@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hopeleft.com/"/>
-  <updated>2017-02-07T08:53:24.000Z</updated>
+  <updated>2017-04-08T09:49:53.000Z</updated>
   <id>http://blog.hopeleft.com/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浏览器的 Cache 机制研究</title>
+    <link href="http://blog.hopeleft.com/2017/02/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%20Cache%20%E6%9C%BA%E5%88%B6%E7%A0%94%E7%A9%B6/"/>
+    <id>http://blog.hopeleft.com/2017/02/14/浏览器的 Cache 机制研究/</id>
+    <published>2017-02-14T06:35:28.000Z</published>
+    <updated>2017-04-08T09:49:53.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;测试过程&quot;&gt;&lt;a href=&quot;#测试过程&quot; class=&quot;headerlink&quot; title=&quot;测试过程&quot;&gt;&lt;/a&gt;测试过程&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;打开网页可以发现图都是 &lt;code&gt;from memory cache&lt;/code&gt; 方式获取的，另外还有一些 &lt;code&gt;from disk cache&lt;/code&gt; 的则是浏览器插件的 js 和 css 文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;media/14870541119124/14870545904964.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;按照网上说的(&lt;a href=&quot;(http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers&quot;&gt;StackOverflow: Using &lt;meta&gt; tags to turn off caching in all browsers&lt;/a&gt;))，添加了清除缓存语句，然而图片还是 &lt;code&gt;from memory cache&lt;/code&gt;，说明图片的缓存并不受 meta 控制&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;cache-control&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;max-age=0&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;cache-control&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;no-cache&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;expires&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;0&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;expires&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Tue, 01 Jan 1980 1:00:00 GMT&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;pragma&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;no-cache&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Cache-Control&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;no-cache, no-store, must-revalidate&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Pragma&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;no-cache&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Expires&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;0&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;在 Chrome 浏览器下，可以通过 &lt;code&gt;chrome://cache&lt;/code&gt; 地址来查看当前 chrome 缓存的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;media/14870541119124/14870587533341.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发现工程中的文件有时候是 &lt;code&gt;from disk cache&lt;/code&gt;，有时候是 &lt;code&gt;from memory cache&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;media/14870541119124/14870618446585.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;加入了以下语句以后，清除缓存加刷新页面，ubt 文件加载了一次以后还是会显示 &lt;code&gt;from disk cache&lt;/code&gt;，说明语句并没有起作用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;media/14870541119124/14870623717107.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;media/14870541119124/14870623524159.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;memory cache&lt;/strong&gt; vs &lt;strong&gt;disk cache&lt;/strong&gt;: 按照 Reddit 上的回答&lt;a href=&quot;https://www.reddit.com/r/explainlikeimfive/comments/3660ig/eli5what_is_the_difference_between_disk_caching/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;What is the difference between disk caching and memory caching?&lt;/a&gt;，浏览器缓存一般存于 &lt;strong&gt;disk cache&lt;/strong&gt;，而系统缓存一般存于 &lt;strong&gt;memory cache&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;media/14870541119124/14870635219273.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;相关链接&quot;&gt;&lt;a href=&quot;#相关链接&quot; class=&quot;headerlink&quot; title=&quot;相关链接&quot;&gt;&lt;/a&gt;相关链接&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/49547/how-to-control-web-page-caching-across-all-browsers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;StackOverflow: How to control web page caching, across all browsers&lt;/a&gt;: 赞同最多的答案&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;(http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers&quot;&gt;StackOverflow: Using &lt;meta&gt; tags to turn off caching in all browsers&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;测试过程&quot;&gt;&lt;a href=&quot;#测试过程&quot; class=&quot;headerlink&quot; title=&quot;测试过程&quot;&gt;&lt;/a&gt;测试过程&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;打开网页可以发现图都是 &lt;code&gt;from memory cache&lt;/code&gt; 方式获取的，另外还有一些 
+    
+    </summary>
+    
+      <category term="未完成" scheme="http://blog.hopeleft.com/categories/%E6%9C%AA%E5%AE%8C%E6%88%90/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>日本行政区划</title>
@@ -414,7 +466,7 @@
     <link href="http://blog.hopeleft.com/2016/04/08/Github%20Pages%20+%20Hexo%20%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
     <id>http://blog.hopeleft.com/2016/04/08/Github Pages + Hexo 写博客/</id>
     <published>2016-04-08T07:02:28.000Z</published>
-    <updated>2016-12-16T09:28:04.000Z</updated>
+    <updated>2017-04-08T09:53:37.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;相关链接&quot;&gt;&lt;a href=&quot;#相关链接&quot; class=&quot;headerlink&quot; title=&quot;相关链接&quot;&gt;&lt;/a&gt;相关链接&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/hexo-document/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;极客学院&lt;/a&gt;&lt;/li&gt;
