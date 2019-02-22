@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>浏览器的 Cache 机制研究 | HopeLeft</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测试过程
-打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件
-
-
-
-按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
+  <meta name="description" content="测试过程 打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件    按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浏览器的 Cache 机制研究">
 <meta property="og:url" content="http://blog.hopeleft.com/2017/02/14/浏览器的 Cache 机制研究/index.html">
 <meta property="og:site_name" content="HopeLeft">
-<meta property="og:description" content="测试过程
-打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件
-
-
-
-按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870545904964.jpg">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870587533341.jpg">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870618446585.jpg">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870623717107.jpg">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870623524159.jpg">
-<meta property="og:image" content="http://blog.hopeleft.com/media/14870541119124/14870635219273.jpg">
-<meta property="og:updated_time" content="2017-04-08T09:49:53.000Z">
+<meta property="og:description" content="测试过程 打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件    按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870545904964.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870587533341.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870618446585.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870623717107.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870623524159.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870635219273.jpg">
+<meta property="og:updated_time" content="2017-04-08T10:28:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浏览器的 Cache 机制研究">
-<meta name="twitter:description" content="测试过程
-打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件
-
-
-
-按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
-<meta name="twitter:image" content="http://blog.hopeleft.com/media/14870541119124/14870545904964.jpg">
+<meta name="twitter:description" content="测试过程 打开网页可以发现图都是 from memory cache 方式获取的，另外还有一些 from disk cache 的则是浏览器插件的 js 和 css 文件    按照网上说的(StackOverflow: Using  tags to turn off caching in all browsers))，添加了清除缓存语句，然而图片还是 from memory cache，说明图片">
+<meta name="twitter:image" content="http://blog.hopeleft.com/2017/02/14/浏览器的%20Cache%20机制研究/media/14870541119124/14870545904964.jpg">
   
     <link rel="alternative" href="/atom.xml" title="HopeLeft" type="application/atom+xml">
   
@@ -46,7 +32,7 @@
   
   <link rel="stylesheet" href="/css/style.css">
 </head>
-
+</html>
 <body>
   <div id="container">
     <div class="left-col">
@@ -141,7 +127,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/实践/" style="font-size: 10px;">实践</a> <a href="/tags/工具/" style="font-size: 20px;">工具</a> <a href="/tags/语法/" style="font-size: 15px;">语法</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/实践/" style="font-size: 10px;">实践</a> <a href="/tags/工具/" style="font-size: 20px;">工具</a> <a href="/tags/游戏攻略/" style="font-size: 10px;">游戏攻略</a> <a href="/tags/语法/" style="font-size: 15px;">语法</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -237,7 +223,7 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
+      <input type="hidden" class="isFancy">
     
     
       <header class="article-header">
@@ -267,7 +253,7 @@
         <h2 id="测试过程"><a href="#测试过程" class="headerlink" title="测试过程"></a>测试过程</h2><ul>
 <li>打开网页可以发现图都是 <code>from memory cache</code> 方式获取的，另外还有一些 <code>from disk cache</code> 的则是浏览器插件的 js 和 css 文件</li>
 </ul>
-<p><img src="media/14870541119124/14870545904964.jpg" alt=""></p>
+<p><img src="media/14870541119124/14870545904964.jpg" alt></p>
 <ul>
 <li><p>按照网上说的(<a href="(http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers">StackOverflow: Using <meta> tags to turn off caching in all browsers</a>))，添加了清除缓存语句，然而图片还是 <code>from memory cache</code>，说明图片的缓存并不受 meta 控制</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"cache-control"</span> <span class="attr">content</span>=<span class="string">"max-age=0"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"cache-control"</span> <span class="attr">content</span>=<span class="string">"no-cache"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"expires"</span> <span class="attr">content</span>=<span class="string">"0"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"expires"</span> <span class="attr">content</span>=<span class="string">"Tue, 01 Jan 1980 1:00:00 GMT"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"pragma"</span> <span class="attr">content</span>=<span class="string">"no-cache"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
@@ -277,22 +263,22 @@
 </code></pre><ul>
 <li>在 Chrome 浏览器下，可以通过 <code>chrome://cache</code> 地址来查看当前 chrome 缓存的文件</li>
 </ul>
-<p><img src="media/14870541119124/14870587533341.jpg" alt=""></p>
+<p><img src="media/14870541119124/14870587533341.jpg" alt></p>
 <ul>
 <li>发现工程中的文件有时候是 <code>from disk cache</code>，有时候是 <code>from memory cache</code></li>
 </ul>
-<p><img src="media/14870541119124/14870618446585.jpg" alt=""></p>
+<p><img src="media/14870541119124/14870618446585.jpg" alt></p>
 <ul>
 <li>加入了以下语句以后，清除缓存加刷新页面，ubt 文件加载了一次以后还是会显示 <code>from disk cache</code>，说明语句并没有起作用</li>
 </ul>
-<p><img src="media/14870541119124/14870623717107.jpg" alt=""></p>
-<p><img src="media/14870541119124/14870623524159.jpg" alt=""></p>
+<p><img src="media/14870541119124/14870623717107.jpg" alt></p>
+<p><img src="media/14870541119124/14870623524159.jpg" alt></p>
 <ul>
-<li><strong>memory cache</strong> vs <strong>disk cache</strong>: 按照 Reddit 上的回答<a href="https://www.reddit.com/r/explainlikeimfive/comments/3660ig/eli5what_is_the_difference_between_disk_caching/" target="_blank" rel="external">What is the difference between disk caching and memory caching?</a>，浏览器缓存一般存于 <strong>disk cache</strong>，而系统缓存一般存于 <strong>memory cache</strong></li>
+<li><strong>memory cache</strong> vs <strong>disk cache</strong>: 按照 Reddit 上的回答<a href="https://www.reddit.com/r/explainlikeimfive/comments/3660ig/eli5what_is_the_difference_between_disk_caching/" target="_blank" rel="noopener">What is the difference between disk caching and memory caching?</a>，浏览器缓存一般存于 <strong>disk cache</strong>，而系统缓存一般存于 <strong>memory cache</strong></li>
 </ul>
-<p><img src="media/14870541119124/14870635219273.jpg" alt=""></p>
+<p><img src="media/14870541119124/14870635219273.jpg" alt></p>
 <h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
-<li><a href="http://stackoverflow.com/questions/49547/how-to-control-web-page-caching-across-all-browsers" target="_blank" rel="external">StackOverflow: How to control web page caching, across all browsers</a>: 赞同最多的答案</li>
+<li><a href="http://stackoverflow.com/questions/49547/how-to-control-web-page-caching-across-all-browsers" target="_blank" rel="noopener">StackOverflow: How to control web page caching, across all browsers</a>: 赞同最多的答案</li>
 <li><a href="(http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers">StackOverflow: Using <meta> tags to turn off caching in all browsers</a>)</li>
 </ul>
 
@@ -303,6 +289,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2019/02/22/农药攻略/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          农药攻略
+        
+      </div>
+    </a>
   
   
     <a href="/2017/01/04/日本行政区划/" id="article-nav-older" class="article-nav-link-wrap">
@@ -366,7 +361,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 Lyn
+    		&copy; 2019 Lyn
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
