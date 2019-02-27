@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VSCode 基本操作 | HopeLeft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="VS Code基本操作 命令面板：cmd + shift + p  Code Cli 的安装   光标移动  单词：option + 左右 行：cmd + 左右 代码块：cmd + shift + \ =&amp;gt; 很关键 文件：cmd + 上下   文本选择 + shift  单词：option + 左右 + shift 行：cmd + 左右 + shift   操作  删除代码 删除行 cmd">
+<meta name="keywords" content="工具使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCode 基本操作">
+<meta property="og:url" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/index.html">
+<meta property="og:site_name" content="HopeLeft">
+<meta property="og:description" content="VS Code基本操作 命令面板：cmd + shift + p  Code Cli 的安装   光标移动  单词：option + 左右 行：cmd + 左右 代码块：cmd + shift + \ =&amp;gt; 很关键 文件：cmd + 上下   文本选择 + shift  单词：option + 左右 + shift 行：cmd + 左右 + shift   操作  删除代码 删除行 cmd">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15481522955441.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482407032089.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482581731361.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482397619087.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482559630550.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482563560237.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482137824196.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482140578138.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482589171116.jpg">
+<meta property="og:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15482590011608.jpg">
+<meta property="og:updated_time" content="2019-02-27T06:48:36.626Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VSCode 基本操作">
+<meta name="twitter:description" content="VS Code基本操作 命令面板：cmd + shift + p  Code Cli 的安装   光标移动  单词：option + 左右 行：cmd + 左右 代码块：cmd + shift + \ =&amp;gt; 很关键 文件：cmd + 上下   文本选择 + shift  单词：option + 左右 + shift 行：cmd + 左右 + shift   操作  删除代码 删除行 cmd">
+<meta name="twitter:image" content="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/media/15481297883580/15481522955441.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="HopeLeft" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars3.githubusercontent.com/u/8351105?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lyn</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/HopeLyn" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="mailto:buaa_lyn@163.com" title="mail">mail</a>
+					        
+								<a class="google" target="_blank" href="mailto:buaaxigua@gmail.com" title="google">google</a>
+					        
+								<a class="linkedin" target="_blank" href="https://cn.linkedin.com/in/yannan-li-abb147a3" title="linkedin">linkedin</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/实践/" style="font-size: 10px;">实践</a> <a href="/tags/工具/" style="font-size: 20px;">工具</a> <a href="/tags/工具使用/" style="font-size: 10px;">工具使用</a> <a href="/tags/游戏攻略/" style="font-size: 10px;">游戏攻略</a> <a href="/tags/语法/" style="font-size: 15px;">语法</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">喜欢编程，热爱生活的🍉君</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Lyn</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="https://avatars3.githubusercontent.com/u/8351105?v=3&amp;s=460" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Lyn</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/HopeLyn" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="mailto:buaa_lyn@163.com" title="mail">mail</a>
+			        
+						<a class="google" target="_blank" href="mailto:buaaxigua@gmail.com" title="google">google</a>
+			        
+						<a class="linkedin" target="_blank" href="https://cn.linkedin.com/in/yannan-li-abb147a3" title="linkedin">linkedin</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-VSCode-基本操作" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/02/27/VSCode-基本操作/" class="article-date">
+  	<time datetime="2019-02-27T06:34:04.000Z" itemprop="datePublished">2019-02-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      VSCode 基本操作
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具使用/">工具使用</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h1><h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><ul>
+<li><p>命令面板：cmd + shift + p</p>
+<ul>
+<li>Code Cli 的安装</li>
+</ul>
+</li>
+<li><p>光标移动</p>
+<ul>
+<li>单词：option + 左右</li>
+<li>行：cmd + 左右</li>
+<li><strong>代码块</strong>：cmd + shift + \ =&gt; <strong>很关键</strong></li>
+<li><strong>文件</strong>：cmd + 上下</li>
+</ul>
+</li>
+<li><p>文本选择 + <code>shift</code></p>
+<ul>
+<li>单词：option + 左右 + shift</li>
+<li>行：cmd + 左右 + shift</li>
+</ul>
+</li>
+<li><p>操作</p>
+<ul>
+<li>删除代码<ul>
+<li>删除行<ul>
+<li>cmd + fn + delete 右侧所有代码</li>
+<li>cmd + delete 左侧所有代码</li>
+</ul>
+</li>
+<li>删除单词<ul>
+<li>option + fn + delete 右侧所有代码</li>
+<li>option + delete 左侧所有代码</li>
+</ul>
+</li>
+<li>删除当前行 cmd + shift + k</li>
+<li>剪切当前行 cmd + x</li>
+</ul>
+</li>
+<li>移动一行代码：option + 上下</li>
+</ul>
+</li>
+<li><p><code>keyboard</code> 查看键位绑定：cmd + k cmd + s</p>
+</li>
+</ul>
+<h2 id="进阶操作"><a href="#进阶操作" class="headerlink" title="进阶操作"></a>进阶操作</h2><ul>
+<li><p>代码格式化：format</p>
+<ul>
+<li>option + shift + f</li>
+</ul>
+</li>
+<li><p>排序：sort line ascending =&gt; cmd + shift + p</p>
+</li>
+<li><p>多光标操作 =&gt; <strong>？</strong> <code>https://time.geekbang.org/column/article/40261</code></p>
+<ul>
+<li>cmd + d =&gt; 选中左边第一个单词</li>
+<li>选中多行后，option + shift + i =&gt; 多行行尾添加光标</li>
+</ul>
+</li>
+</ul>
+<h4 id="文件跳转"><a href="#文件跳转" class="headerlink" title="文件跳转"></a>文件跳转</h4><pre><code>*    cmd + p =&gt; 最近的文件列表(或者查找文件)
+    *    cmd + enter =&gt; 新窗口里打开 =&gt; **可以对比不同**
+    *     打开以后发现它是可切换状态，因为你没有编辑，你可以手动 cmd + s 去固定这个标签页
+    ![](media/15481297883580/15482156645261.jpg)
+
+*    ctrl + tab 切换
+*    cmd + option + 左右 =&gt; 浏览器里可以通用
+</code></pre><ul>
+<li>行跳转：ctrl + g =&gt; 在查看 git 冲突的时候 =&gt; vim 模式 <code>:number</code></li>
+</ul>
+<h4 id="符号跳转"><a href="#符号跳转" class="headerlink" title="符号跳转"></a>符号跳转</h4><ul>
+<li>cmd + shift + o：跳转类(类似于大纲，在组件的功能了解中很方便)</li>
+<li>cmd + t：跨文件查找调用方法的定义(比如查找接口调用的时候)</li>
+</ul>
+<h4 id="函数跳转"><a href="#函数跳转" class="headerlink" title="函数跳转"></a>函数跳转</h4><ul>
+<li>cmd + f12：跳转方法实现</li>
+<li>f12: 跳转方法定义</li>
+<li><p>shift + f12：查看方法调用</p>
+<ul>
+<li>space 打开</li>
+</ul>
+</li>
+<li><p>f2：快速修改方法/函数名(相关的调用/定义)</p>
+</li>
+<li><p>cmd + option + [/] =&gt; 代码折叠，看代码逻辑的时候特别好用，和 cmd + shift + 左右 都特别适合看代码</p>
+</li>
+<li>cmd + k -&gt; cmd + 0 =&gt; 折叠文件<ul>
+<li>cmd + k -&gt; cmd + j</li>
+</ul>
+</li>
+</ul>
+<h3 id="自动补全、快速修复、重构-gt-https-time-geekbang-org-column-article-40847"><a href="#自动补全、快速修复、重构-gt-https-time-geekbang-org-column-article-40847" class="headerlink" title="自动补全、快速修复、重构 =&gt; https://time.geekbang.org/column/article/40847"></a>自动补全、快速修复、重构 =&gt; <a href="https://time.geekbang.org/column/article/40847" target="_blank" rel="noopener">https://time.geekbang.org/column/article/40847</a></h3><h3 id="代码折叠、小地图、面包屑"><a href="#代码折叠、小地图、面包屑" class="headerlink" title="代码折叠、小地图、面包屑"></a>代码折叠、小地图、面包屑</h3><h4 id="面包屑-gt-可能有人更喜欢这个而不是文件资源管理器"><a href="#面包屑-gt-可能有人更喜欢这个而不是文件资源管理器" class="headerlink" title="面包屑 =&gt; 可能有人更喜欢这个而不是文件资源管理器"></a>面包屑 =&gt; 可能有人更喜欢这个而不是文件资源管理器</h4><ul>
+<li>打开面包屑 cmd + shift + .</li>
+<li>option + 左/右 =&gt; 切换层级</li>
+</ul>
+<h3 id="极速搜索"><a href="#极速搜索" class="headerlink" title="极速搜索"></a>极速搜索</h3><ul>
+<li>cmd + f：自动选中当前光标所在的单词</li>
+<li>cmd + g：搜索，但是光标仍在编辑区</li>
+</ul>
+<p>大小写敏感，全单词匹配、正则匹配</p>
+<p>替换：cmd + option + f</p>
+<h3 id="全局查找"><a href="#全局查找" class="headerlink" title="全局查找"></a>全局查找</h3><ul>
+<li>cmd + shift + f 查找</li>
+<li>cmd + 下 切换到相应搜索结果</li>
+<li>o 打开搜索列表</li>
+</ul>
+<h3 id="查找-定位"><a href="#查找-定位" class="headerlink" title="查找/定位"></a>查找/定位</h3><ul>
+<li>cmd + f <ul>
+<li>enter =&gt; 下一个</li>
+<li>shift + enter =&gt; 上一个</li>
+</ul>
+</li>
+</ul>
+<h3 id="切换工作区"><a href="#切换工作区" class="headerlink" title="切换工作区"></a>切换工作区</h3><ul>
+<li>cmd + shift + e =&gt; 文件资源管理器</li>
+<li>cmd + shift + x =&gt; 插件管理</li>
+<li>ctrl + shift + g =&gt; 源代码管理</li>
+</ul>
+<p>右击工作区即可<br><img src="media/15481297883580/15481522955441.jpg" alt></p>
+<h3 id="切换窗口"><a href="#切换窗口" class="headerlink" title="切换窗口"></a>切换窗口</h3><p>支持多工作区模式，但是更支持多窗口，一个工作区对应一个窗口</p>
+<ul>
+<li>ctrl + w =&gt; 切换多窗口</li>
+</ul>
+<h4 id="markdown-预览"><a href="#markdown-预览" class="headerlink" title="markdown 预览"></a>markdown 预览</h4><p>cmd + k 、v</p>
+<h4 id="查找键位绑定-keyboard"><a href="#查找键位绑定-keyboard" class="headerlink" title="查找键位绑定 keyboard"></a>查找键位绑定 keyboard</h4><ul>
+<li>录制按钮</li>
+</ul>
+<p><img src="media/15481297883580/15482407032089.jpg" alt></p>
+<h3 id="编辑器配置"><a href="#编辑器配置" class="headerlink" title="编辑器配置"></a>编辑器配置</h3><ul>
+<li>垂直标尺 =&gt; “editor.rulers”: [120] =&gt; 120字符</li>
+<li>缩进参考线 =&gt; “editor.renderIndentGuides”: true</li>
+<li>lineNumber</li>
+<li>空格处填充符号 =&gt; “editor.renderWhitespace”: “boundary”</li>
+<li>左侧行号也添加了背景号 =&gt;  “editor.renderLineHighlight”: “all”</li>
+</ul>
+<h4 id="其它配置"><a href="#其它配置" class="headerlink" title="其它配置"></a>其它配置</h4><ul>
+<li>tabSize、lineHeight、autoSave/autoSaveDelay</li>
+<li><code>terminal.integrated.shell.osx</code>: zsh</li>
+<li>“files.exclude”:  { “**/node_modules”: true } =&gt; 加快编辑器运行速度</li>
+</ul>
+<h4 id="悬浮注解"><a href="#悬浮注解" class="headerlink" title="悬浮注解"></a>悬浮注解</h4><p><img src="media/15481297883580/15482581731361.jpg" alt></p>
+<h3 id="编辑器管理"><a href="#编辑器管理" class="headerlink" title="编辑器管理"></a>编辑器管理</h3><h4 id="窗口管理"><a href="#窗口管理" class="headerlink" title="窗口管理"></a>窗口管理</h4><ul>
+<li>cmd + \ =&gt; 打开新窗口<ul>
+<li>cmd + 1/2/3 =&gt; 切换窗口</li>
+<li>cmd + option + 0(数字) =&gt; 切换布局方向(垂直/水平)</li>
+</ul>
+</li>
+</ul>
+<h4 id="Tab-管理"><a href="#Tab-管理" class="headerlink" title="Tab 管理"></a>Tab 管理</h4><ul>
+<li>ctrl + tab</li>
+<li>option + cmd + 左/右</li>
+<li>cmd + p</li>
+</ul>
+<h3 id="视图切换"><a href="#视图切换" class="headerlink" title="视图切换"></a>视图切换</h3><ul>
+<li>cmd + B =&gt; 左侧边栏的展示/隐藏</li>
+<li>zen =&gt; 只留下代码</li>
+<li>cmd + j =&gt; 查看 code spell check 的报错<br><img src="media/15481297883580/15482397619087.jpg" alt></li>
+</ul>
+<h3 id="插件篇"><a href="#插件篇" class="headerlink" title="插件篇"></a>插件篇</h3><h4 id="BASIC"><a href="#BASIC" class="headerlink" title="BASIC"></a>BASIC</h4><ul>
+<li>code spell checker：检查单词拼写错误</li>
+<li>Bracket Pair Colorizer：彩色的括号</li>
+<li>Document This：为 function、class 等自动生成文档</li>
+<li>Gitlens：Git 集成工具<ul>
+<li>当前行展示 git blame 信息</li>
+</ul>
+</li>
+<li>Material Icon Theme/vscode-icons：文件夹icon的多样性</li>
+<li><p>TODO Highlight：List TODO list<br><img src="media/15481297883580/15482559630550.jpg" alt></p>
+</li>
+<li><p>Vim：</p>
+</li>
+<li>vscode-fileheader：ctrl + option + i 生成新文件的文档 =&gt; 孙悟空到此一游</li>
+<li>Path Intellisense：补全文件路径名</li>
+<li>Faker：生产 fake name =&gt; 就像名字一样废…</li>
+</ul>
+<h4 id="ADDITIONS"><a href="#ADDITIONS" class="headerlink" title="ADDITIONS"></a>ADDITIONS</h4><ul>
+<li>pigment：可以直接看到当前的色彩</li>
+<li>settings sync：generate key =&gt; 保存到 gists 上</li>
+<li>project manager =&gt; 保存以后很方便可以切换(打开的/未打开的)工程</li>
+<li><p>live share =&gt; 登录就可以修改别人的工程文件，而不需要拉代码</p>
+</li>
+<li><p>.vscode 中添加 recommendations =&gt; vscode 会提示安装</p>
+</li>
+</ul>
+<p><img src="media/15481297883580/15482563560237.jpg" alt></p>
+<h2 id="mac-note-的使用"><a href="#mac-note-的使用" class="headerlink" title="mac note 的使用"></a>mac note 的使用</h2><ul>
+<li>ctrl + shift + tab 或者 ctrl + tab</li>
+</ul>
+<h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><ul>
+<li>f12 调出来控制台</li>
+<li>debugger 控制台<ul>
+<li>f8、f10、f11</li>
+<li>esc：source debugger 的时候可以调出 console 控制台</li>
+</ul>
+</li>
+<li>cmd + shift + n 打开隐身窗口</li>
+<li>shift + w =&gt; 在新的窗口打开浏览页</li>
+</ul>
+<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><ul>
+<li>vimium<ul>
+<li>j、k 上下挪动页面</li>
+<li>yy：复制当前 url</li>
+<li>p/P：当前剪贴板的 url 复制到地址栏</li>
+<li>o/O：打开bookMark、收藏栏、历史记录中的页面</li>
+<li>T：查找当前打开的 tab</li>
+<li>r：reload page</li>
+<li>shift + ? 查看快捷键</li>
+<li>查找模式<ul>
+<li>/xxx：查找 xxx</li>
+<li>n/N：上/下一个</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="其它插件"><a href="#其它插件" class="headerlink" title="其它插件"></a>其它插件</h3><ul>
+<li>有道划词/网易有道词典鼠标取词：查询方便，划词翻译快速</li>
+<li>二维码生成</li>
+<li>great suspender</li>
+<li>各种 devtools：redux、MobX、vue、React</li>
+<li>Github 相关的文件管理侧边栏</li>
+</ul>
+<h2 id="iTerm-2-使用"><a href="#iTerm-2-使用" class="headerlink" title="iTerm 2 使用"></a>iTerm 2 使用</h2><ul>
+<li>选择文本: <code>cmd + f</code>搜索 ＋ <code>tab</code>选中文本，会自动添加到剪切板，使用<code>cmd + v</code>即可使用</li>
+<li>临时调用iterm: 通过hotkey的设置 =&gt; <code>shift + space</code> =&gt; <strong>可以尝试使用cal看今天是周几，不过使用台历也没有问题</strong><br><img src="media/15481297883580/15482137824196.jpg" alt></li>
+</ul>
+<ul>
+<li>命令行标记: <code>cmd + shift + m</code>可以为某一行(或者说某一屏幕添加标记),之后可以使用<code>cmd + shift + j</code>跳回这里<ul>
+<li>比如一些安装步骤或者看到日志需要对比的时候可以打标记</li>
+</ul>
+</li>
+<li>剪贴板历史: <code>cmd + shift + h</code>可以查看(iterm)剪贴板历史纪录</li>
+<li>查看操作历史(快照): <code>cmd + option + B</code>可以查看之前一段时间内的操作的快照(阴险)</li>
+</ul>
+<p><img src="media/15481297883580/15482140578138.jpg" alt></p>
+<ul>
+<li>option + b、option + f</li>
+<li><p>iTerm2</p>
+<ul>
+<li><ol>
+<li>分窗口操作：<code>shift+command+d</code>（横向）command+d（竖向）</li>
+</ol>
+<ul>
+<li><code>cmd + opt + 方向键</code>: 切换窗口内的面板 </li>
+</ul>
+</li>
+<li><ol start="2">
+<li>查找和粘贴：command+f，呼出查找功能，tab 键选中找到的文本，<code>option+enter</code> 粘贴</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>全屏快捷键是 <code>cmd+enter</code> 而不是默认的 <code>ctrl+cmd+f</code></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>cmd + k 清屏</p>
+</li>
+<li>cmd + r 刷新屏幕(上面的记录会保留)</li>
+</ul>
+<h2 id="切换显示器"><a href="#切换显示器" class="headerlink" title="切换显示器"></a>切换显示器</h2><p>因为没有别的切换快捷键，所以可以通过 alfred/spotlight 来实现，所以需要保留一个功能，不要在不同显示屏打开同一个应用，这会导致切换的问题</p>
+<ul>
+<li>注意，ctrl + 左/右 只会切换鼠标所在位置的屏幕，所以需要使用别的方式切换打开了多个窗口的应用<ul>
+<li>vscode: ctrl + w</li>
+<li>chrome: vimium 插件的 T </li>
+</ul>
+</li>
+</ul>
+<h2 id="MAC-常用快捷键"><a href="#MAC-常用快捷键" class="headerlink" title="MAC 常用快捷键"></a>MAC 常用快捷键</h2><ul>
+<li>ctrl + cmd + f =&gt; toggle full screen</li>
+<li>cmd + m =&gt; 最小化窗口</li>
+<li>ctrl + 方向 =&gt; switch screen </li>
+<li>ctrl + 上 =&gt; list screens</li>
+<li>cmd + tab =&gt; switch apps 可以使用 alfred/spotlight 替代</li>
+<li>cmd + option + esc =&gt; 强制关闭程序</li>
+</ul>
+<h3 id="终端常用快捷键-https-www-cnblogs-com-mangosoft-p-6375266-html"><a href="#终端常用快捷键-https-www-cnblogs-com-mangosoft-p-6375266-html" class="headerlink" title="终端常用快捷键(https://www.cnblogs.com/mangosoft/p/6375266.html)"></a>终端常用快捷键(<a href="https://www.cnblogs.com/mangosoft/p/6375266.html" target="_blank" rel="noopener">https://www.cnblogs.com/mangosoft/p/6375266.html</a>)</h3><ul>
+<li><code>ls</code></li>
+<li>mkdir、cd、cp、mv、rm、pwd</li>
+<li>history、ctrl + r</li>
+<li>env =&gt; 配置环境时需要</li>
+<li>cat、find、head/tail、diff(在进行一些实验的时候，可以用来对比实验结果)</li>
+<li>wc：看代码量(行、词、字母)</li>
+<li>ps、kill</li>
+<li><code>du -h 1</code></li>
+</ul>
+<h2 id="其它电脑配置"><a href="#其它电脑配置" class="headerlink" title="其它电脑配置"></a>其它电脑配置</h2><h3 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h3><p><img src="media/15481297883580/15482589171116.jpg" alt></p>
+<p>参看： </p>
+<ul>
+<li><a href="https://realpython.com/vim-and-python-a-match-made-in-heaven/" target="_blank" rel="noopener">Python环境配置</a></li>
+<li><p><a href="http://www.ruanyifeng.com/blog/2018/09/vimrc.html" target="_blank" rel="noopener">阮一峰-vim 配置入门</a></p>
+</li>
+<li><p>插件管理 Vundle</p>
+</li>
+<li>Powerline</li>
+<li>Line Numbering</li>
+<li>File Browsing</li>
+<li>Color Schemes</li>
+<li>Syntax Checking/Highlighting</li>
+<li>Auto-Complete</li>
+</ul>
+<h4 id="其它链接"><a href="#其它链接" class="headerlink" title="其它链接"></a>其它链接</h4><ul>
+<li><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="noopener">Vim配置</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">oh-my-zsh</a></li>
+<li><a href="https://www.cnblogs.com/zhongcq/p/3642794.html" target="_blank" rel="noopener">渐进配置vim</a></li>
+</ul>
+<h3 id="zsh-插件"><a href="#zsh-插件" class="headerlink" title="zsh 插件"></a>zsh 插件</h3><p><img src="media/15481297883580/15482590011608.jpg" alt></p>
+<h2 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h2><ul>
+<li>zM/zR =&gt; 全文折叠/展开</li>
+<li>zc/zo: 代码块折叠/展开</li>
+<li>多级折叠</li>
+<li></li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/02/22/农药攻略/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">农药攻略</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="VSCode-基本操作" data-title="VSCode 基本操作" data-url="http://blog.hopeleft.com/2019/02/27/VSCode-基本操作/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2019 Lyn
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
